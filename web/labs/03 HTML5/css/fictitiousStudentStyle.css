@@ -1,0 +1,71 @@
+/*body{
+    margin-left: 200px;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+figure{
+    margin: 2em;
+    max-width: 60%
+}
+
+img{
+    max-width: 40%;
+    float: right;
+}
+
+section#factbox{
+    border: 1px solid black;
+    margin: 2em;
+    padding: 1em;
+    max-width: 80%
+}
+
+figure#catpicture {
+    float: right;
+}*/
+body{
+    margin-left: 200px;
+    font-family: Arial, Verdana, sans-serif;
+    background-color: darkgrey;
+}
+
+h1{
+    padding-left: 30px;
+    max-width: 800px;
+    font-size: 70px;
+}
+
+figure{
+
+    /*margin: 2em;*/
+}
+
+img#portrait{
+    display: block;
+    float: right;
+    max-width: 20%;
+    padding-right: 200px;
+}
+
+section#factbox{
+    /*float: left;*/
+    background-color: white;
+    border: 1px solid black;
+    margin: 2em;
+    padding-left: 1em;
+    max-width: 800px;
+}
+
+table{
+    min-width: 400px;
+    background-color: lightyellow;
+}
+
+img#catpicture{
+    max-width: 30%;
+}
+
+p{
+    max-width: 500px;
+}
+

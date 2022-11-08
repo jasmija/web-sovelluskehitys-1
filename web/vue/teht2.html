@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Näytä/Piilota</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+</script>
+
+<div id="app">
+    <span v-if="seen">Now you see me</span>
+    <span v-else>Now you don't</span>
+    <button v-on:click="Vaihda">Show/Hide</button>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            seen: true
+        }, methods:{
+            Vaihda: function (){
+                if(this.seen === true){
+                    this.seen = false;
+                }else{
+                    this.seen =true;
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

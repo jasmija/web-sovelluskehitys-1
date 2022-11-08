@@ -1,0 +1,17 @@
+body{
+    background-color: lightblue;
+    font-family: Calibri;
+}
+
+legend{
+    font-weight: bold;
+}
+
+input#submit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    color: black;
+}
+

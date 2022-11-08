@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3134bca-3d1e-406e-a224-7bb51da4e2b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/labs/11 Unit Testing/spec/notes.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs/11 Unit Testing/src/module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labs/11 Unit Testing/src/notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs/10 JavaScript Modules/function_closure.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs/10 JavaScript Modules/function_closure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labs/10 JavaScript Modules/js_classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/labs/10 JavaScript Modules/js_classes.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pmrPx1OBv3D7oNmI6hZU8YxII1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.16.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.37" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jaspa\Desktop\Git\Web-sovelluskehitys\materiaali\labs\04 CSS3 and Bootstrap\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.berries.html">
+    <configuration name="berries.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/materiaali/labs/04 CSS3 and Bootstrap/berries.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="boxmodel.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/materiaali/labs/04 CSS3 and Bootstrap/boxmodel.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="csstest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/materiaali/labs/04 CSS3 and Bootstrap/csstest.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="fictitiousStudent.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/materiaali/labs/03 HTML5/fictitiousStudent.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="floating.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/materiaali/labs/04 CSS3 and Bootstrap/floating.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.berries.html" />
+        <item itemvalue="JavaScript Debug.fictitiousStudent.html" />
+        <item itemvalue="JavaScript Debug.floating.html" />
+        <item itemvalue="JavaScript Debug.boxmodel.html" />
+        <item itemvalue="JavaScript Debug.csstest.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3134bca-3d1e-406e-a224-7bb51da4e2b3" name="Default Changelist" comment="" />
+      <created>1615799086409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615799086409</updated>
+      <workItem from="1615799087517" duration="145000" />
+      <workItem from="1615799236937" duration="787000" />
+      <workItem from="1615800544752" duration="81261000" />
+      <workItem from="1616498191048" duration="11466000" />
+      <workItem from="1616570578976" duration="29810000" />
+      <workItem from="1616658926384" duration="18931000" />
+      <workItem from="1616833056227" duration="10294000" />
+      <workItem from="1616999310763" duration="483000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="766" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616674093492">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="766" y="157" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616674093492" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1615800412258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615800412258" />
+    <state x="555" y="42" width="981" height="707" key="SettingsEditor" timestamp="1616999409728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="42" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616999409728" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616351227860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616351227860" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1615901492598">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1615901492598" />
+    <state x="254" y="499" width="430" height="259" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1615820387265">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="254" y="499" width="430" height="259" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615820387265" />
+    <state x="518" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1616665181655">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="518" y="222" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616665181655" />
+  </component>
+</project>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+    <p>
+        <input type="text" v-model="text" placeholder="add new item here" />
+        <button v-on:click="addItem()">Add</button>
+        <button @click="deleteFromList(index)">Remove</button>
+    </p>
+    <ul class="list">
+        <li v-for="item in list">
+            <label>
+                <span>{{item.text}}</span>
+            </label>
+        </li>
+    </ul>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            text: '',
+            list: [
+            ]
+        },
+        methods: {
+            addItem: function() {
+                var newItem = this.text.trim();
+                if (!newItem) {return;}
+                this.list.push(
+                    {text: newItem}
+                );
+                this.text = '';
+            },
+            deleteFromList(index) {
+                this.list.splice(index, 1);
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

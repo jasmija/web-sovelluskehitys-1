@@ -1,0 +1,67 @@
+body {
+    font-family: Calibri;
+    color: black;
+    background-color: lightblue;
+}
+
+h1 {
+    /*color: rgba(65,105,225,0.7);*/
+    color: darkblue;
+    font-weight: bold;
+    font-size: 4.0em;
+}
+
+h2 {
+    color: mediumblue;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+ul, ol {
+    font-size: 0.8em;
+}
+
+ol, li, ul {
+    border-style: solid;
+}
+
+li{
+    background-color: darkgrey;
+}
+
+p, li, ol, ul, dl{
+    text-indent: 30px;
+    /*margin-left: 60px;*/
+
+}
+
+figcaption{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+p.copyright_notice {
+    font-size: 0.8em;
+}
+
+#special {
+    font-size: 0.8em;
+    color: yellowgreen;
+    font-style: italic;
+    border-left: 2px solid black;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+p::first-letter {
+    font-size:8em;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+#code{
+    margin-left: 30px;
+}
+

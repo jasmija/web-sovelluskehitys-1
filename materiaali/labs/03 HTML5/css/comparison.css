@@ -1,0 +1,27 @@
+body{
+    font-family: Calibri;
+}
+
+th{
+    background-color: red;
+    color: white;
+}
+
+table, caption {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#RAM{
+    background-color: lightgray;
+}
+
+.row{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px solid black;
+}
+
+#description{
+    padding-left: 50px;
+}

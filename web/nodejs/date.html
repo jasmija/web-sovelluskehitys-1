@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fin">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .btn-space {
+            margin-right: 25px;
+        }
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+        h1{
+            font-family: "Arial Black";
+        }
+        h2{
+            padding-bottom: 30px;
+            font-size: 14px;
+            font-family: "Arial Black";
+        }
+    </style>
+    <title>Date</title>
+</head>
+<body>
+<form action = "" role="form">
+    <div class="container" id="wholeContainer">
+        <h1>Syötä päivämääräväli</h1>
+        <h2>Etsitään tapahtumia tietokannasta...</h2>
+
+        <!-- <div class="col-sm-4"> -->
+        <!--<fieldset> -->
+        <div class="controls form-inline">
+            <div class="form-group">
+                <label for="startingDate">Alkupäivämäärä:</label>
+                <input value="2021-01-01" type="text" placeholder="vuosi-kk-paiva" id="startingDate" name="startingDate">
+                <!--<input type="date" class="form-control" id="startingDate" name="startingDate"/>-->
+            </div>
+
+            <div class="form-group">
+                <label for="endingDate">Loppupäivämäärä:</label>
+                <input value="2021-02-02" type="text" placeholder="vuosi-kk-paiva" id="endingDate" name="endingDate">
+                <!--<input type="date" class="form-control" id="endingDate" name="endingDate"/>-->
+            </div>
+        </div>
+
+        <div id="locationInfo" class="controls form-inline">
+
+        </div>
+        <input onclick="makeQuery()" type="button" value="Lähetä" id="submit">
+    </div>
+
+</form>
+<script>
+   var json; //json is global...
+
+    function makeQuery() {
+        var startdate = document.getElementById("startingDate").value;
+        var enddate = document.getElementById("endingDate").value;
+        if (startdate.length == 0) { // fix this and support empty field
+            return;
+        } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    json = JSON.parse(xmlhttp.responseText);
+                    console.log(json);
+                    if (json.length> 0){ // something found
+                        showList(json);
+                    }
+                    else {
+                        document.getElementById("locationInfo").innerHTML = "<br/>Ei tapahtumatietoja tältä ajalta.";
+                    }
+                }
+            };
+            var start = startdate;
+            var end = enddate;
+            console.log("aloitus: " + start + " lopetus: " + end);
+            xmlhttp.open("GET", "http://localhost:8086/api/events?start=" + startdate+"&end="+enddate, true);
+            xmlhttp.send();
+        }
+    }
+
+    function showList(json) {
+        var divElement = document.getElementById("locationInfo");
+        var i;
+        var unOrdered;
+        var listElement, nestedElement, unNestedElement;
+        var string;
+
+        /*var ul=document.createElement('ul');
+        for (i in json) {
+            console.log("i" + i);
+            var li = document.createElement('li');
+            string = json[i].Date+", "+json[i].Name+", "+json[i].Type+", "+json[i].Location_name;
+            console.log("String muuttuja" + string);
+            li.innerHTML = string;   // Use innerHTML to set the text
+            ul.appendChild(li);
+        }
+        divElement.appendChild(ul);*/
+
+        for (i in json) {
+            // create a form group div
+            unOrdered = document.createElement("ul");
+            unOrdered.setAttribute("class", "del"); // mark all these dynamically created elements to be "deleted"
+            divElement.appendChild(unOrdered);
+
+            listElement = document.createElement("li");
+            listElement.setAttribute("class", "del");
+            string = json[i].Name;
+            listElement.innerHTML = string;
+            unOrdered.appendChild(listElement);
+            nestedElement = document.createElement("ul");
+            nestedElement.setAttribute("class", "del");
+            listElement.appendChild(nestedElement);
+            unNestedElement = document.createElement("li");
+            unNestedElement.setAttribute("class", "del");
+            string = json[i].Type+", "+json[i].Date+", "+json[i].Name+", "+json[i].Location_name;
+            unNestedElement.innerHTML = string;
+            nestedElement.appendChild(unNestedElement);
+    }
+        // delete submit-button
+        var submitBtn = document.getElementById("submit");
+        var parent  = document.getElementById("wholeContainer");
+        parent.removeChild(submitBtn);
+
+        // add ok-button
+        okBtn = document.createElement("input");
+        okBtn.setAttribute("type", "button");
+        okBtn.setAttribute("value", "Ok");
+        okBtn.setAttribute("id", "Ok");
+        okBtn.setAttribute("onclick", "Clear()");
+        parent.appendChild(okBtn);
+   }
+
+    function Clear() {
+
+        $('.del').remove(); // delete unordered list with jQuery
+
+        // delete Ok-button
+        var btn = document.getElementById("Ok");
+        var parent  = document.getElementById("wholeContainer");
+        parent.removeChild(btn);
+
+        // put submit-button again on the form...
+        submitBtn = document.createElement("input");
+        submitBtn.setAttribute("type", "button");
+        submitBtn.setAttribute("value", "Lähetä");
+        submitBtn.setAttribute("id", "submit");
+        submitBtn.setAttribute("onclick", "makeQuery()");
+        var parent  = document.getElementById("wholeContainer");
+        parent.appendChild(submitBtn);
+    }
+
+</script>
+</body>
+
+</html>
