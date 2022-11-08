@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let maara;
+    let osallistujat = [];
+    let nimet;
+
+    maara = prompt('Anna osallistujien lukumäärä.');
+
+    for(i = 0; i < maara; i++ ) {
+        nimet = prompt('Anna osallistujien nimet.');
+        osallistujat[i] = nimet;
+        document.write('<p>' + (i+1) + '. ' + osallistujat[i] + '</p>');
+    }
+
+</script>
+</html>

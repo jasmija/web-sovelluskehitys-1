@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let luku;
+    let luvut = [];
+
+    luku = prompt('Anna luku');
+    luvut[0] = luku;
+    i = 0;
+    i++;
+
+    while (luku != 0) {
+         i = 0;
+         luku = prompt('Anna luku.');
+         i++;
+         luvut[i] = luku;
+
+         luvut.sort((a,b) => a-b);
+         document.write('<p>' + luvut[i] + '</p>');
+    }
+
+</script>
+</html>

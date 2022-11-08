@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let tulos;
+
+    luku1 = prompt('Anna luku.');
+    luku2 = prompt('Anna luku.');
+    luku3 = prompt('Anna luku.');
+
+    console.log('Luvuista ' + luku1 + ', ' + luku2 + ', ' + luku3 + ' suurin on ' + suurin(luku1, luku2, luku3)+ '.');
+
+    function suurin(luku1, luku2, luku3) {
+        if (luku1 >= luku2 && luku1 >= luku3){
+            tulos = luku1;
+        }else if(luku2 >= luku1 && luku2 >= luku3){
+            tulos = luku2;
+        }else{
+            tulos = luku3;
+        }
+        return tulos;
+    }
+
+</script>
+</html>

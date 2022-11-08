@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>tehtävä7.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #a5c261;}
+.s4 { color: #a9b7c6;}
+.s5 { color: #cc7832;}
+.s6 { color: #6a8759;}
+.s7 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+tehtävä7.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s1">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s1">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+  <span class="s0">&lt;meta </span><span class="s1">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+  <span class="s0">&lt;title&gt;</span><span class="s4">Title</span><span class="s0">&lt;/title&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;script&gt;</span>
+  <span class="s5">let </span><span class="s2">saldo</span><span class="s5">;</span>
+  <span class="s5">let </span><span class="s2">korko</span><span class="s5">;</span>
+  <span class="s5">let </span><span class="s2">korkovuodessa</span><span class="s5">;</span>
+  <span class="s5">let </span><span class="s2">kasvanutsaldo</span><span class="s5">;</span>
+
+  <span class="s2">saldo = prompt(</span><span class="s6">'Anna saldo.'</span><span class="s4">)</span><span class="s5">;</span>
+  <span class="s2">korko = prompt(</span><span class="s6">'Anna vuotuinen korkoprosentti.'</span><span class="s4">)</span><span class="s5">;</span>
+
+  <span class="s2">korkovuodessa = saldo * (korko / </span><span class="s7">100</span><span class="s4">)</span><span class="s5">;</span>
+  <span class="s2">kasvanutsaldo = korkovuodessa + parseInt(saldo)</span><span class="s5">;</span>
+
+  <span class="s5">function </span><span class="s2">financial(x) {</span>
+    <span class="s5">return </span><span class="s2">Number.parseFloat(x).toFixed(</span><span class="s7">2</span><span class="s4">)</span><span class="s5">;</span>
+  <span class="s4">}</span>
+  <span class="s2">console.log(</span><span class="s6">'Vuodessa kertyvä korko ' </span><span class="s4">+ financial(korkovuodessa) + </span><span class="s6">'.'</span><span class="s4">)</span><span class="s5">;</span>
+  <span class="s2">console.log(</span><span class="s6">'Kasvanut saldo ' </span><span class="s4">+ financial(kasvanutsaldo) + </span><span class="s6">'.'</span><span class="s4">)</span><span class="s5">;</span>
+<span class="s0">&lt;/script&gt;</span>
+
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span>
+</pre>
+</body>
+</html>

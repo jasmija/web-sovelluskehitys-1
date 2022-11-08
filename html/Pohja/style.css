@@ -1,0 +1,22 @@
+.kuvat{
+    margin: 10px 50px;
+}
+.kuvat img{
+    padding: 15px;
+    width: 200px;
+}
+
+h1{
+    margin-left: 105px;
+}
+
+p{
+    margin-left: 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+

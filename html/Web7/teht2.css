@@ -1,0 +1,11 @@
+p {
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+}

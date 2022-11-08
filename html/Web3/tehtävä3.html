@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<inspect>
+<script>
+
+    let aloitusvuosi;
+    let lopetusvuosi;
+
+    aloitusvuosi = prompt('Anna aloitusvuosi.');
+    lopetusvuosi = prompt('Anna lopetusvuosi.');
+
+    for (let i = aloitusvuosi; i<= lopetusvuosi; i++) {
+        if (i % 4 == 0 && i % 100 != 0) {
+            document.write('<p>' + i +'</p>');
+        } else if (i % 100 == 0 && i % 400 == 0) {
+            document.write('<p>' + i +'</p>');
+        }
+    }
+
+</script>
+</inspect>
+</html>

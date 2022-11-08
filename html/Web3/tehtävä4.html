@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let lukumaara;
+    let summa = 0;
+
+    lukumaara = prompt('Anna arpakuutioiden lukumäärä.');
+
+    for(let i= 1; i <= lukumaara; i++){
+        let tulos = Math.floor(Math.random()*6)+1;
+        summa += tulos;
+        console.log(tulos);
+    }
+
+    console.log('Silmälukujen summa on ' + summa + '.');
+
+</script>
+</html>

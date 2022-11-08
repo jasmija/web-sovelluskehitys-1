@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let maara;
+    let koirat = [];
+    let nimet;
+
+    maara = 6;
+
+    for(let i = 0; i < maara; i++ ) {
+        nimet = prompt('Anna koiran nimi.');
+        koirat[i] = nimet;
+        document.write('<p>' + koirat[i] + '</p>');
+    }
+
+    for(i = maara-1; i>=0; i--){
+        koirat.sort((a,b) => b-a);
+        document.write('<p>' + koirat[i] + '</p>');
+    }
+
+
+
+
+
+</script>
+</html>

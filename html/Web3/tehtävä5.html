@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let kokonaisluku;
+    let testi = false;
+
+    kokonaisluku = prompt('Anna kokonaisluku.');
+
+    for(let i = 1; i < kokonaisluku; i++) {
+            if (i > 1 && i < kokonaisluku && kokonaisluku % i == 0) {
+                testi = false;
+                break;
+            }else{
+                testi = true;
+            }
+    }
+
+    if(!testi){
+        console.log('Luku ' + kokonaisluku + ' ei ole alkuluku.');
+    }else{
+        console.log('Luku ' + kokonaisluku + ' on alkuluku.');
+    }
+
+</script>
+</html>

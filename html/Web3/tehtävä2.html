@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let luku;
+    let neliojuuri;
+
+    luku = prompt('Anna luku.');
+
+    while (luku < 0) {
+        luku = prompt('Anna luku.');
+        continue;
+    }
+    neliojuuri = Math.sqrt(luku);
+    console.log('Luvun neliöjuuri on ' + neliojuuri + '.');
+
+</script>
+</html>

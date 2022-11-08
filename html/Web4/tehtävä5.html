@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let luku;
+    let luvut = [];
+    i = 0;
+
+    while (true){
+        console.log('moi')
+        luku = prompt('Anna luku.');
+        i++;
+        if(luvut.includes(luku)){
+            document.write('Luku on jo listalla');
+            break;
+        }
+        luvut[i] = luku;
+        console.log('Syötetty ' + luvut[i]);
+    }
+
+    /*while (kaytetty[luku]);{
+        kaytetty[luku] = true;
+        document.write(luku);
+        i
+        do {
+            i = 0;
+            i++;
+            luku = prompt('Anna luku');
+            kaytetty[i] = luku;
+
+        } while (kaytetty[luku]);
+
+            kaytetty[luku] = true;
+            document.write(luku);
+        }*/
+</script>
+</html>

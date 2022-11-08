@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    luvut= [3, -2, 1, -4];
+
+    luvut = vastaluvuksi(luvut);
+    for(let i=0; i<luvut; i++){
+        console.log(luvut[i]);
+    }
+
+    function vastaluvuksi(taulukko) {
+        for(let i=0; i<taulukko.length; i++){
+            taulukko[i]= taulukko[i]*(-1);
+            console.log(taulukko[i]);
+        }
+    }
+
+
+
+
+
+</script>
+</html>
